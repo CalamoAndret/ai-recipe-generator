@@ -1,0 +1,8 @@
+# never upload local secrets or build artifacts
+.env
+.env.local
+.env.*.local
+node_modules
+.next
+.vercel
+AGENTS.md

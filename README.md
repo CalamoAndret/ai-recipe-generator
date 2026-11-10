@@ -10,9 +10,9 @@ The interface is in Brazilian Portuguese 🇧🇷.
 
 ## 🔗 Live demo
 
-**👉 [Live demo on Vercel](#)** <!-- TODO: replace # with the Vercel URL -->
+**👉 [ai-recipe-generator-calamo.vercel.app](https://ai-recipe-generator-calamo.vercel.app)**
 
-> Runs in demo mode with sample recipes when no AI key is configured, so anyone can try it without an account.
+> No sign-up needed. Add your ingredients, pick a goal and generate recipes.
 
 ---
 
