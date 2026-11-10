@@ -2,7 +2,13 @@
   "name": "ai-recipe-generator",
   "version": "1.0.0",
   "private": true,
-  "description": "Gerador de Receitas com IA — receitas a partir dos ingredientes que você tem em casa.",
+  "description": "AI-powered recipe generator: turn the ingredients you have into recipes with macros, photos and a shopping list.",
+  "author": "Cálamo Andret (https://calamoandret.github.io/developer-portfolio/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CalamoAndret/ai-recipe-generator.git"
+  },
+  "homepage": "https://github.com/CalamoAndret/ai-recipe-generator#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

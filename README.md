@@ -62,7 +62,7 @@ The interface is in Brazilian Portuguese 🇧🇷.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/ai-recipe-generator.git
+git clone https://github.com/CalamoAndret/ai-recipe-generator.git
 cd ai-recipe-generator
 
 # 2. Install dependencies
@@ -133,8 +133,11 @@ lib/
 
 **Cálamo Andret**
 
-- LinkedIn: [linkedin.com/in/your-profile](#) <!-- TODO -->
-- GitHub: [github.com/your-username](#) <!-- TODO -->
+- 💼 LinkedIn: [linkedin.com/in/cálamo-andret](https://www.linkedin.com/in/c%C3%A1lamo-andret-377481238/)
+- 💻 GitHub: [github.com/CalamoAndret](https://github.com/CalamoAndret)
+- 🌐 Portfolio: [calamoandret.github.io/developer-portfolio](https://calamoandret.github.io/developer-portfolio/)
+
+If you liked this project, feel free to ⭐ the repo or reach out on LinkedIn!
 
 ---
 
