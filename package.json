@@ -1,0 +1,20 @@
+{
+  "name": "ai-recipe-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gerador de Receitas com IA — receitas a partir dos ingredientes que você tem em casa.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.4.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}
