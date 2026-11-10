@@ -5,7 +5,7 @@ import { ErroIA, escolherProvedor } from "@/lib/ia";
 import { normalizarResposta } from "@/lib/normalizar";
 
 export const runtime = "nodejs";
-export const maxDuration = 120;
+export const maxDuration = 60; // limite do plano gratuito da Vercel
 
 function erro(mensagem, status = 400) {
   return NextResponse.json({ erro: mensagem }, { status });
