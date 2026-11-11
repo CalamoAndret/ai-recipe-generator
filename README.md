@@ -85,6 +85,7 @@ All variables are optional. With no AI key, the app runs in demo mode.
 | --- | --- |
 | `GEMINI_API_KEY` | Google Gemini key. Free at [aistudio.google.com/apikey](https://aistudio.google.com/apikey). |
 | `GEMINI_MODEL` | Gemini model. Default: `gemini-3.8-flash`. |
+| `GEMINI_FALLBACK_MODELS` | Comma-separated backup models, tried when the main one is overloaded. Default: `gemini-3.5-flash-lite,gemini-3.1-flash-lite`. |
 | `ANTHROPIC_API_KEY` | Anthropic Claude key (paid), from [console.anthropic.com](https://console.anthropic.com/). |
 | `ANTHROPIC_MODEL` | Claude model. Default: `claude-opus-5-5`. |
 | `ANTHROPIC_EFFORT` | `low`, `medium` or `high`. Default: `medium`. |
@@ -110,6 +111,7 @@ Browser ──POST /api/receitas──▶ Route Handler (server) ──▶ Gemin
 
 - **Server-side AI calls.** The browser never talks to the AI provider. A Next.js Route Handler holds the API keys, builds the prompt and picks the provider from the environment variables.
 - **Structured output.** The model receives a JSON Schema (recipe name, time, difficulty, servings, macros, ingredients with an "already have it" flag, steps, a chef's tip and an English image search term). Its response must follow that schema.
+- **Resilient to overload.** If the main Gemini model is overloaded, rate-limited or too slow, the route automatically retries with lighter free-tier models within the serverless time budget.
 - **Validation layer.** Every response goes through a normalizer that coerces types, clamps values, drops incomplete recipes and re-checks which ingredients the user already has. The UI never receives malformed data. Timeouts, rate limits, invalid keys and refusals are each turned into a friendly message.
 - **Photos with caching.** Each card asks `/api/imagem` for a photo, and the 3 cards load theirs in parallel. The server queries Pixabay, falls back to TheMealDB, and caches results per term in memory, so concurrent requests for the same term share one lookup. Image failures never break the page.
 
